@@ -11,6 +11,12 @@
 		A16127F22856F93F00F64045 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16127F12856F93F00F64045 /* ContentView.swift */; };
 		A16127F42856F94300F64045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A16127F32856F94300F64045 /* Assets.xcassets */; };
 		A16127F72856F94300F64045 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A16127F62856F94300F64045 /* Preview Assets.xcassets */; };
+		A16127FE2856F9CE00F64045 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16127FD2856F9CE00F64045 /* CardView.swift */; };
+		A1AAA8DB285A012E007B9671 /* CardStack in Frameworks */ = {isa = PBXBuildFile; productRef = A1AAA8DA285A012E007B9671 /* CardStack */; };
+		A1AAA8FC285A0B07007B9671 /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AAA8FB285A0B07007B9671 /* CardData.swift */; };
+		A1AAA8FF285A0C7A007B9671 /* CardsViewHSK1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AAA8FE285A0C7A007B9671 /* CardsViewHSK1.swift */; };
+		A1AAA901285A184D007B9671 /* CardViewWithThumbs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AAA900285A184D007B9671 /* CardViewWithThumbs.swift */; };
+		A1AAA903285A1AF4007B9671 /* CardThumbsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AAA902285A1AF4007B9671 /* CardThumbsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,11 @@
 		A16127F12856F93F00F64045 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A16127F32856F94300F64045 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A16127F62856F94300F64045 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A16127FD2856F9CE00F64045 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		A1AAA8FB285A0B07007B9671 /* CardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
+		A1AAA8FE285A0C7A007B9671 /* CardsViewHSK1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewHSK1.swift; sourceTree = "<group>"; };
+		A1AAA900285A184D007B9671 /* CardViewWithThumbs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewWithThumbs.swift; sourceTree = "<group>"; };
+		A1AAA902285A1AF4007B9671 /* CardThumbsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardThumbsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1AAA8DB285A012E007B9671 /* CardStack in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +63,8 @@
 		A16127EE2856F93F00F64045 /* SimpleChinese–SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				A1AAA8FD285A0C4E007B9671 /* HSK1 */,
+				A1AAA8FA285A0AE7007B9671 /* Model */,
 				A16127EF2856F93F00F64045 /* SimpleChinese_SwiftUIApp.swift */,
 				A16127F12856F93F00F64045 /* ContentView.swift */,
 				A16127F32856F94300F64045 /* Assets.xcassets */,
@@ -65,6 +79,25 @@
 				A16127F62856F94300F64045 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A1AAA8FA285A0AE7007B9671 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A16127FD2856F9CE00F64045 /* CardView.swift */,
+				A1AAA902285A1AF4007B9671 /* CardThumbsView.swift */,
+				A1AAA8FB285A0B07007B9671 /* CardData.swift */,
+				A1AAA900285A184D007B9671 /* CardViewWithThumbs.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A1AAA8FD285A0C4E007B9671 /* HSK1 */ = {
+			isa = PBXGroup;
+			children = (
+				A1AAA8FE285A0C7A007B9671 /* CardsViewHSK1.swift */,
+			);
+			name = HSK1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +116,9 @@
 			dependencies = (
 			);
 			name = "SimpleChinese–SwiftUI";
+			packageProductDependencies = (
+				A1AAA8DA285A012E007B9671 /* CardStack */,
+			);
 			productName = "SimpleChinese–SwiftUI";
 			productReference = A16127EC2856F93F00F64045 /* SimpleChinese–SwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +147,9 @@
 				Base,
 			);
 			mainGroup = A16127E32856F93F00F64045;
+			packageReferences = (
+				A1AAA8D9285A012E007B9671 /* XCRemoteSwiftPackageReference "SwiftUI-CardStackView" */,
+			);
 			productRefGroup = A16127ED2856F93F00F64045 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +177,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A16127F22856F93F00F64045 /* ContentView.swift in Sources */,
+				A1AAA8FF285A0C7A007B9671 /* CardsViewHSK1.swift in Sources */,
+				A16127FE2856F9CE00F64045 /* CardView.swift in Sources */,
 				A16127F02856F93F00F64045 /* SimpleChinese_SwiftUIApp.swift in Sources */,
+				A1AAA8FC285A0B07007B9671 /* CardData.swift in Sources */,
+				A1AAA901285A184D007B9671 /* CardViewWithThumbs.swift in Sources */,
+				A1AAA903285A1AF4007B9671 /* CardThumbsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +383,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A1AAA8D9285A012E007B9671 /* XCRemoteSwiftPackageReference "SwiftUI-CardStackView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dadalar/SwiftUI-CardStackView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A1AAA8DA285A012E007B9671 /* CardStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1AAA8D9285A012E007B9671 /* XCRemoteSwiftPackageReference "SwiftUI-CardStackView" */;
+			productName = CardStack;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A16127E42856F93F00F64045 /* Project object */;
 }
